@@ -5,7 +5,13 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   staticPageGenerationTimeout: 300,
+  exportPathMap: '',
+  assetPrefix:
+    process.env.NODE_ENV === 'production'
+      ? 'milliwonkim.github.io/milliwonkim-posts'
+      : '',
   images: {
+    unoptimized: true,
     domains: [
       'www.notion.so',
       'notion.so',

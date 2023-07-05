@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   padding: 2vmin;
-
+  background: #2f3437;
   font-size: 16px;
   line-height: 1.5;
   color: rgb(55, 53, 47);
@@ -86,31 +86,16 @@
 }
 
 .toggleDarkMode:hover {
-  color: #2795e9;
+  transition: color 50ms ease-out;
+  color: #ffd55b;
 }
 
 .twitter:hover {
   color: #2795e9;
 }
 
-.mastodon:hover {
-  color: #5a4be1;
-}
-
-.zhihu:hover {
-  color: #0066ff;
-}
-
-.github:hover {
-  color: #c9510c;
-}
-
 .youtube:hover {
   color: #ff0000;
-}
-
-.linkedin:hover {
-  color: #0077b5;
 }
 
 .newsletter:hover {

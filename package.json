@@ -8,8 +8,7 @@
     "node": ">=16"
   },
   "scripts": {
-    "predeploy": "yarn build && rm -rf out && next export",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles",
+    "deploy": "yarn build && rm -rf out && next export && touch out/.nojekyll && gh-pages -d out --dotfiles",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

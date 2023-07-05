@@ -5,11 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   staticPageGenerationTimeout: 300,
-  exportPathMap: '',
-  assetPrefix:
-    process.env.NODE_ENV === 'production'
-      ? 'milliwonkim.github.io/milliwonkim-posts'
-      : '',
+  exportTailingSplash: true,
   images: {
     unoptimized: true,
     domains: [
